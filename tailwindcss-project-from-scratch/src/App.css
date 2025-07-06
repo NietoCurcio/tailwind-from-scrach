@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* https://tailwindcss.com/docs/adding-custom-styles#customizing-your-theme */
 @theme {
     --breakpoint-sm: 480px;
     --breakpoint-md: 768px;

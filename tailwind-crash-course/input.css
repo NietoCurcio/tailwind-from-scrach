@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* https://tailwindcss.com/docs/upgrade-guide#container-configuration */
+@utility container {
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
+/* extending utility */
+@utility py-52 {
+    padding: 0 10rem;
+    /* notice it's an extension, because we didn't lose the py-52, only added padding to x */
+}
+
+/* Creating utility*/
+@utility felipao-margin {
+    margin: 10rem;
+}
+
+.btn {
+    @apply font-bold py-2 px-4 rounded;
+}
+
+.btn-blue {
+    @apply bg-blue-500 text-white hover:bg-blue-700;
+}
