@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+    <!-- ← Add or remove 'dark' manually to toggle -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tailwind Dark Mode</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Enable class-based dark mode -->
+        <script>
+            tailwind.config = {
+                darkMode: "class", // <- You can also use 'media' for system preference
+            };
+        </script>
+    </head>
+    <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white">
+        <div class="min-h-screen flex items-center justify-center">
+            <h1 class="text-3xl font-bold">Hello, Dark Mode!</h1>
+        </div>
+    </body>
+</html>
