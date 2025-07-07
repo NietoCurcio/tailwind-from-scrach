@@ -1,29 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Customization</title>
-  </head>
- <body
-    class="bg-black sm:bg-green-800 md:bg-blue-800 lg:bg-yellow-800 xl:bg-purple-800 2xl:bg-orange-800"
-  >
-   
-      <h1 class="text-white text-xl"></h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <style type="text/tailwindcss">
+            @theme {
+                /* Let's update the breakpoints */
+                --spacing: 1rem;
+                --spacing-6: 5.5rem;
 
-    <script>
-      function showBrowserWidth() {
-        const width = window.innerWidth
+                --breakpoint-sm: 550px;
+                --breakpoint-md: 800px;
+                --breakpoint-lg: 1200px;
+                --breakpoint-xl: 1440px;
 
-        document.querySelector('h1').innerHTML = `Width: ${width}`
-      }
+                --font-sans: "Graphik", sans-serif;
+                --font-serif: "Merriweather", serif;
 
-      window.onload = showBrowserWidth
-      window.onresize = showBrowserWidth
-    </script>
-  </body>
+                --color-primary: #ff5733;
+                --color-secondary: #fffc33;
+
+                --radius-8xl: 4rem;
+            }
+
+            @utility p-custom {
+                padding: 5.5rem;
+            }
+
+            /* @utility p-6 {
+                padding: 100.5rem; extending this work doesn't work
+            } */
+        </style>
+        <title>Customization</title>
+    </head>
+    <body
+        class="bg-black sm:bg-green-800 md:bg-blue-800 lg:bg-yellow-800 xl:bg-purple-800 2xl:bg-orange-800"
+    >
+        <div class="border border-secondary p-6 max-w-sm mx-auto rounded-8xl">
+            <h1 class="text-primary text-xl p-custom"></h1>
+        </div>
+
+        <script>
+            function showBrowserWidth() {
+                const width = window.innerWidth;
+
+                document.querySelector("h1").innerHTML = `Width: ${width}`;
+            }
+
+            window.onload = showBrowserWidth;
+            window.onresize = showBrowserWidth;
+        </script>
+    </body>
 </html>
 
 <!-- Breakpoint Classes

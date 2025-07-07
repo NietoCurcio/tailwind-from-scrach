@@ -1,34 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Interactivity</title>
-  </head>
-  <body>
-    <!-- Hover State Styling -->
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <title>Interactivity</title>
+    </head>
+    <body>
+        <!-- Hover State Styling -->
+        <button
+            class="bg-black text-white py-3 px-5 rounded-lg m-3 cursor-pointer hover:bg-orange-500 hover:text-white"
+        >
+            Submit
+        </button>
 
-    <!-- Focus State Styling -->
+        <!-- Focus State Styling -->
+        <button
+            class="bg-black text-white py-3 px-5 rounded-lg m-3 cursor-pointer focus:bg-green-500 focus:text-white"
+        >
+            Submit
+        </button>
 
-    <!-- Active State Styling -->
+        <!-- Active State Styling -->
+        <button
+            class="bg-black text-white py-3 px-5 rounded-lg m-3 cursor-pointer active:bg-green-500 active:text-white"
+        >
+            Submit
+        </button>
 
-    <!-- Styling based on parent state -->
+        <!-- Styling based on parent state -->
+        <a
+            href=""
+            class="group block max-w-xs mx-auto rounded-lg p-6 bg-white shadow-lg space-y-3 hover:bg-sky-500"
+        >
+            <!-- <h3 class="hover:text-white">Card Title</h3> -->
+            <h3 class="group-hover:text-white">Card Title</h3>
+            <p class="group-hover:text-white">This is the card text</p>
+        </a>
 
-    <!-- Pseudo Classes -->
+        <!-- Pseudo Classes -->
+        <ul>
+            <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">
+                Item 1
+            </li>
+            <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">
+                Item 2
+            </li>
+            <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">
+                Item 3
+            </li>
+            <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">
+                Item 4
+            </li>
+            <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">
+                Item 5
+            </li>
+            <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">
+                Item 6
+            </li>
+        </ul>
 
-    <!-- Appearance -->
-    <!-- Use appearance-none to reset any browser specific styling on an element. This utility is often used when creating custom form components. -->
+        <!-- Appearance -->
+        <!-- Use appearance-none to reset any browser specific styling on an element. This utility is often used when creating custom form components. -->
+        <select class="appearance-none">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
 
-    <!-- Cursor -->
+        <!-- Cursor -->
+        <button class="bg-black text-white py-3 px-5 rounded-lg cursor-wait">
+            Submit
+        </button>
 
-    <!-- Resize -->
+        <button
+            class="bg-black text-white py-3 px-5 rounded-lg cursor-not-allowed"
+        >
+            Submit
+        </button>
 
-    <!-- User Select -->
+        <!-- Resize -->
+        <textarea class="resize rounded-md w-md h-sm bg-blue-500"></textarea>
 
-    <!-- Smooth Scroll Example -->
-  </body>
+        <!-- User Select -->
+        <div class="select-none">Lorem ipsum dolor sit amet.</div>
+        <div class="select-text">Lorem ipsum dolor sit amet.</div>
+        <div class="select-all">Lorem ipsum dolor sit amet.</div>
+        <div class="select-auto">Lorem ipsum dolor sit amet.</div>
+
+        <a href="#item" class="block my-6">Go to item</a>
+
+        <!-- Smooth Scroll Example -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis
+            consequatur assumenda officia aut perspiciatis esse accusamus eum
+            aliquid tenetur deserunt et veritatis asperiores magni iusto, unde
+            vitae voluptatum quos, vero odio inventore cumque. Porro corporis
+            quibusdam ex itaque, deleniti dolorum illo quasi ipsa molestiae,
+            architecto nihil voluptates, earum molestias vero officiis excepturi
+            perferendis soluta eius odit distinctio asperiores nulla
+            consequuntur qui! Deleniti facere officia ipsum repudiandae dolorum
+            ipsam, atque quas dolorem excepturi ea dolor dolores impedit dicta,
+            modi totam, debitis magni dignissimos omnis libero veniam!
+            Voluptatem quaerat corrupti illum hic sit porro dolorem repudiandae
+            nisi quae recusandae? Veritatis dolore rem voluptate animi
+            praesentium a, accusantium dolores sed enim dignissimos earum?
+            Maxime mollitia molestiae iure nostrum doloribus porro atque
+            consectetur ratione quas deserunt, distinctio voluptatum omnis
+            veritatis natus obcaecati provident excepturi corporis labore
+            necessitatibus? Accusamus quisquam vero doloremque ducimus enim
+            impedit magni officiis ex iste commodi voluptatem, modi consequatur
+            qui natus, fuga consequuntur. Ratione aliquam alias repudiandae hic
+            corporis praesentium dolor maxime commodi eaque ullam illum magnam,
+            cupiditate, facere delectus nulla tenetur quo iusto blanditiis
+            pariatur ducimus soluta unde. Laudantium facere, dolorem nisi soluta
+            quos molestiae aperiam doloremque, ipsam quia commodi reiciendis,
+            facilis enim qui modi excepturi autem placeat et velit? Eius
+            mollitia facere debitis. Aperiam dolores mollitia eos animi
+            asperiores nihil, consequatur iure incidunt dolor assumenda
+            perspiciatis reiciendis quia quas laborum magnam at repudiandae
+            itaque odio voluptatem suscipit magni nisi saepe. Accusantium,
+            inventore aliquam. Veniam quod enim at maiores nesciunt quia culpa
+            voluptatem accusamus modi dolorum animi, debitis illo, ea vitae iure
+            porro eligendi voluptates? Eum error sapiente quo iure. Cupiditate
+            deserunt quam quaerat, iste ea architecto quod veniam rem velit
+            ipsum, tempora fugit voluptate saepe animi quo repudiandae quibusdam
+            aperiam enim sequi magnam repellendus eligendi veritatis culpa ut!
+            Quo aperiam inventore dolorum quae alias numquam perferendis
+            consequuntur temporibus ducimus sed pariatur, doloremque, officia,
+            natus aspernatur nihil earum assumenda. Voluptates repudiandae porro
+            odit delectus atque quae, facilis sit sequi provident ipsam nam
+            error quod eius hic consequatur amet officia est sint nisi
+            architecto obcaecati beatae. Numquam culpa, cupiditate non assumenda
+            omnis similique vel odit ratione sint tempora, perferendis, illo ut
+            quidem impedit totam sunt suscipit? Rerum soluta fuga distinctio
+            dolores vero necessitatibus sed corporis vel itaque. Doloribus,
+            fugit ipsum. Ipsum eum impedit deserunt odio commodi cupiditate
+            accusamus adipisci saepe cum obcaecati nihil architecto eveniet
+            eius, doloribus corporis velit reiciendis nam dolores. Consequatur
+            molestias sunt aliquam maiores sapiente rem totam! Repellat.
+        </p>
+        <div id="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            tenetur corrupti harum cum saepe molestias nulla eos! Iure voluptas
+            ad nisi velit vero alias blanditiis, magni quis harum voluptate?
+            Obcaecati rerum quia aperiam. Ullam assumenda rerum excepturi!
+            Doloremque dolor autem incidunt. Corporis aut dolor non mollitia
+            enim officia eius molestiae.
+        </div>
+    </body>
 </html>
 
 <!-- Cursor
